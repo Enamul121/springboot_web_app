@@ -1,4 +1,4 @@
-
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html>
 <head>
     <title>Add Todo</title>
@@ -14,19 +14,20 @@
 
 <h1>Todo Add..................</h1>
 <br>
-Add todo: for ${name_key}
+ <!--Add todo: for ${name_key} -- -->
 
 <br>
-<form method="post">
+
+
+<form:form method="post"  modelAttribute="todo">
 <fieldset>
-    <label class="form-group">Description</label>
-    <input type="text" name="desc" class="form-control" required="required" />
+    <form:label class="form-group" path="desc">Description</form:label>
+    <form:input type="text" name="desc" path="desc" class="form-control" required="required" />
+    <form:errors path="desc" cssClass="text-warning"/>
 </fieldset>
 <br>
     <button type="submit" class="btn btn-success">Add</button>
-
-
-</form>
+</form:form>
 </div>
 
 
