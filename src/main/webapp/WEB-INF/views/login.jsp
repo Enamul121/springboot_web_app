@@ -9,8 +9,10 @@
 
 <br>
 
-<form method="post">
 
+
+<font color="red">${message}</font>
+<form method="post">
     Name: <input type="text" name="name" placeholder="Enter your name...."/>
     Password : <input type="password" name="pass" placeholder="enter password....."/>
     <input type="submit"/>
