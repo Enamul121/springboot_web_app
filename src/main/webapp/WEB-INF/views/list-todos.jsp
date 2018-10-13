@@ -2,8 +2,7 @@
 <html>
 <head>
     <title>Todo's for ${name_key}</title>
-    <link href="webjars/bootstrap/4.0.0/css/bootstrap.css"
-          rel="stylesheet">
+    <link href="webjars/bootstrap/4.0.0/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">
@@ -39,7 +38,9 @@
 
 
 </div>
+
 <script src="webjars/jquery/3.0.0/jquery.js"></script>
 <script src="webjars/bootstrap/4.0.0/js/bootstrap.js"></script>
+
 </body>
 </html>
