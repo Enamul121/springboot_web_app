@@ -1,4 +1,4 @@
-package com.spring.boot.app.springboot_web_app;
+package com.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringbootWebAppApplication {
 
     public static void main(String[] args) {
+
         SpringApplication.run(SpringbootWebAppApplication.class, args);
     }
 }
