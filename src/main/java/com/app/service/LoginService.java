@@ -10,7 +10,7 @@ public class LoginService {
 
 
     public boolean validUser(String userId, String pass){
-        return userId.equalsIgnoreCase("enam")&& pass.equalsIgnoreCase("12345");
+        return userId.equalsIgnoreCase("in28Minutes")&& pass.equalsIgnoreCase("123");
 
 
     }

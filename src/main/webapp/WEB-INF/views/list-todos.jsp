@@ -9,3 +9,6 @@ Here are the Todos:
 ${todos}
 <br>
 Name ${name_key}
+
+<br>
+<a href="/add-todo">Add a todo</a>
