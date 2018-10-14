@@ -1,5 +1,6 @@
 package com.app.model;
 
+import javax.validation.constraints.Size;
 import java.util.Date;
 
 public class Todo {
@@ -7,9 +8,17 @@ public class Todo {
 
 
     private int id;
+
+
     private String user;
+
+    @Size(min = 10,max = 120, message = "Description should be 10 to 120 character")
     private String desc;
+
+
     private Date targetDate;
+
+
     private boolean isDone;
 
 

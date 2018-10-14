@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.bind.BindResult;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -42,7 +43,10 @@ public class TodoController {
 
 
     @RequestMapping(value = "/add-todo", method = RequestMethod.POST)
-    public String addTodo(ModelMap model, @Valid Todo todo){
+    public String addTodo(ModelMap model, @Valid Todo todo, BindingResult result){
+        if (result.hasErrors()){
+            return "todo";
+        }
 
         todoService.addTodo((String)model.get("name_key"),todo.getDesc(),new Date(),false);
         return "redirect:/list-todos";
