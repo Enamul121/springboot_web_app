@@ -50,6 +50,41 @@ public class TodoService {
         }
     }
 
+    /***
+     *  retrieve Todo For Update
+     */
+
+
+    public Todo retriveTodoForUpdate(int id) {
+        List<Todo> filteredTodos = new ArrayList<Todo>();
+        for (Todo todo : todos) {
+            if (todo.getId()==(id)) {
+                return todo;
+            }
+        }
+        return null;
+    }
+
+
+    /***
+     *
+     * UPATE Todo
+     *
+     */
+
+
+
+    public void updatTodo(Todo todo){
+        todos.remove(todo);
+        todos.add(todo);
+    }
+
+
+
+
+
+
+
 
 
 }
