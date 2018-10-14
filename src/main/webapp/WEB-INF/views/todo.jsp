@@ -20,8 +20,9 @@
 
 
 <form:form method="post"  modelAttribute="todo">
+    <form:hidden path="id" />
 <fieldset>
-    <form:hidden path="id"></form:hidden>
+
     <form:label class="form-group" path="desc">Description</form:label>
     <form:input type="text" name="desc" path="desc" class="form-control" required="required" />
     <form:errors path="desc" cssClass="text-warning"/>
